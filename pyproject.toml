@@ -1,0 +1,28 @@
+[project]
+name = "RAG-project"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "AmanTayal13", email = "ce24btech11003@iith.ac.in" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "docker>=7.2.0",
+    "jupyter>=1.1.1",
+    "minsearch>=0.2.0",
+    "openai>=3.16.0",
+    "psycopg[binary]>=3.3.6",
+    "pymupdf>=1.28.2",
+    "python-dotenv>=1.2.3",
+    "requests>=2.34.2",
+    "sentence-transformers>=6.1.0",
+    "sqlitesearch>=0.3.0",
+]
+
+[project.scripts]
+RAG-project = "RAG-project:main"
+
+[build-system]
+requires = ["uv_build>=0.12.16,<0.13.0"]
+build-backend = "uv_build"
