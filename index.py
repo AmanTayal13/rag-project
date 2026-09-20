@@ -5,7 +5,7 @@ from database import get_connection, create_table, insert_chunks, retrieve, buil
 from rag import answer_question
 from llm import llm
 
-PDF_PATH = "data/book.pdf"
+PDF_PATH = "data/<your-book.pdf>"
 
 model = SentenceTransformer("all-MiniLM-L6-v2")
 
@@ -24,13 +24,11 @@ insert_chunks(conn, chunks, "xv6-book")
 
 print("Done")
 
-query = "What does the fork function do in xv6?"
+query = "<YOUR-QUESTION>"
 
 results = retrieve(conn, query, model)
     
 context = build_context(results)
-
-query = "What does the fork function do in xv6?"
 
 answer = answer_question(
     query,
