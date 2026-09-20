@@ -95,7 +95,7 @@ PDF_PATH = "data/<your-book.pdf>"
 ### 7. Ask a question
 Inside ```index.py``` find:
 ```bash
-query = "<YOUR-QUESTIOM>"
+query = "<YOUR-QUESTION>"
 ```
 ### 8. Run Index.py
 Then run index.py
